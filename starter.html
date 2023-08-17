@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive Extensions</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js" integ></script>
+</head>
+
+<body>
+    <main>
+        <h1>Starter File</h1>
+        <div>
+            Sample Input :
+            <input type="text" id="sample">
+            <button id="mybutton">CLICK ME</button>
+            
+        </div>
+        <div id="pbar"> Hello</div>
+
+        <h1>Combine latest:</h1>
+        <div id="images" style="display: flex;">
+        <img id="dynosaur" src="assets/x.png" alt=""> &nbsp;
+        <img id="horse" src="assets/y.jpg" alt=""> &nbsp;
+        <img id="turtile" src="assets/z.png" alt="">
+    </div>
+    <div style="margin-bottom: 100px;">
+    <div style="display: inline-block; font-size:25px">
+        <label for="aname">Animal name</label> <br>
+        <select id="aname">
+        <option value="dynosaur" selected>Dynosaur</option>
+        <option value="horse">Horse</option>
+        <option value="turtile">Turtile</option>
+    </select>
+    </div>
+    <div style=" font-size:25px; margin-top: -100px; width: 50%;
+    margin-left: 9em;">
+        <label for="bgColour">Animal Background</label> <br>
+        <select id="bgColour">
+            <option value="blue" selected>Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="red">Red</option>
+        </select>
+    </div>
+</div>
+<div id="choice" style="margin-top: 32px;">OK</div>
+    </main>
+    <script type="./module" src="index.js"></script>
+    <script type="./module" src="./indexSubject.js"></script>
+</body>
+
+</html>
